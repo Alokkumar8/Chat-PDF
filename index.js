@@ -35,7 +35,7 @@ function extractTextFromPDF(filePath) {
     });
 }
 
-// Function to generate a PDF document using pdfkit
+// Function to Chat PDF document using pdfkit
 function generatePDF() {
     const doc = new PDFDocument();
     doc.pipe(fs.createWriteStream('output.pdf'));
@@ -44,7 +44,7 @@ function generatePDF() {
     doc.end();
 }
 
-// Function to parse PDF using pdf.js
+// Function to Chat-PDF using pdf.js
 async function parsePDFWithPdfjs(filePath) {
     const data = new Uint8Array(fs.readFileSync(filePath));
     const loadingTask = pdfjsLib.getDocument(data);
@@ -88,7 +88,7 @@ generatePDF();
 parsePDFWithPdfjs(pdfFilePath)
     .then(text => {
         console.log('PDF parsed successfully using pdf.js:', text);
-        // Your further processing logic here
+        // Your further processing logic here for chatpdf
     })
     .catch(error => {
         console.error('Error parsing PDF using pdf.js:', error);
