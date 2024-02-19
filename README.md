@@ -57,7 +57,7 @@ Define environment variables such as database connection strings, API keys, and 
 
 You can see the webpage at: Open your web browser and go to http://localhost:8080. You'll now be able to use the React-based user interface to interact with the Chat-PDF application.
 
-** Please start both react and nodejs server at same time. 
+** Please start both react and nodejs server at same time. **
 
 If you don't want to use the open source version than you can use the web version of the app: https://ChatPDF.so/
 
